@@ -12,8 +12,32 @@
     width: 60%;
 }
 
+@media (max-width: 991px) {
+
+    #oe-home-logo {
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #oe-home-logo {
+        width: 70%;
+    }
+
+}
+
 #oe-main-logo {
     width: 45%;
+}
+
+@media (max-width: 700px) {
+
+    #oe-main-logo {
+        width: 50%;
+    }
+
 }
 
 .site-branding {
@@ -43,7 +67,6 @@
 }
 
 h2.widget-title {
-    color: #368538;
 }
 
 button {
