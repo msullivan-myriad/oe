@@ -1,0 +1,15 @@
+Fonts:
+
+Main Font: Signika Bold
+
+Colors:
+
+Goblin (Main Font)
+
+Hex: #368538
+RGB: rgb(54, 133, 56)
+
+White (Background)
+
+Hex: #fff
+RGB: rgb(255, 255, 255)
