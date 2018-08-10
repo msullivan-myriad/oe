@@ -18,7 +18,7 @@
 			<?php if ( is_front_page() ) : ?>
                 <a href="<?php echo esc_url( home_url('/'));?>"><img id="oe-home-logo" src="<?php echo get_stylesheet_directory_uri() . '/images/ordered-eating-white-logo.png'; ?>" alt="Ordered Eating"/></a>
 			<?php else : ?>
-                <a href="<?php echo esc_url( home_url('/'));?>"><img id="oe-main-logo" src="<?php echo get_stylesheet_directory_uri() . '/images/ordered-eating-green-logo.png'; ?>" alt="Ordered Eating"/></a>
+                <a href="<?php echo esc_url( home_url('/'));?>"><img id="oe-main-logo" src="<?php echo get_stylesheet_directory_uri() . '/images/ordered-eating-white-logo.png'; ?>" alt="Ordered Eating"/></a>
 			<?php endif; ?>
 
 			<?php

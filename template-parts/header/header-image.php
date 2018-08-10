@@ -21,7 +21,7 @@
 
           else {
               ?>
-                <img src="<?php echo get_stylesheet_directory_uri() . '/images/ordered-eating-berries.jpg'; ?>"/>
+                <img src="<?php echo get_stylesheet_directory_uri() . '/images/ordered-eating-skinny-banner.jpg'; ?>"/>
               <?php
           }
 
