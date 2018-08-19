@@ -40,25 +40,63 @@ get_header(); ?>
                             <p>A state of confusion, frustration, or dissaray</p>
                         </div><!-- .oe-split-1-->
 
-                        <?php /*
-                        <img class="scale-icon" src="<?php echo get_stylesheet_directory_uri() . '/misc-assets/front-page/divide-mathematical-sign.png'; ?>"/>
-                        */?>
+                        <span>vs</span>
 
                         <div class="oe-split-2">
                             <h3>Ordered</h3>
-                            <p>Controlled, structured, organized and clear</p>
+                            <p>Controlled, structured, organized, peaceful, and clear</p>
                         </div><!-- .oe-split-2-->
 
                     </div><!--.oe-split-->
-
                 </div><!--.wrap-->
-
             </div><!--.order-vs-disorder-->
 
+            <div class="recent-posts">
+                <div class="wrap">
+
+                  <?php
+                  // the query
+                  $the_query = new WP_Query( array(
+                    //'category_name' => 'news',
+                    'posts_per_page' => 3,
+                  ));
+                  ?>
+
+                  <?php if ( $the_query->have_posts() ) : ?>
+                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+
+                    <div class="home-page-post">
+                        <a href="<?php the_permalink();?>">
+                          <?php the_post_thumbnail(); ?>
+                          <h2><?php the_title(); ?></h2>
+                          <p><?php the_excerpt(); ?></p>
+                        </a>
+                    </div>
+
+
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+
+                  <?php else : ?>
+                      <p><?php __('No News'); ?></p>
+                  <?php endif; ?>
+
+                </div>
+            </div><!--.recent-posts-->
+
+            <div class="widgets-area">
+                <div class="wrap">
+
+                  <?php if ( is_active_sidebar( 'home_widgets' ) ) : ?>
+                        <?php dynamic_sidebar( 'home_widgets' ); ?>
+                  <?php endif; ?>
+
+                </div><!--.wrapper-->
+            </div><!--..widgets-area-->
+
         </div><!-- #home-content-section -->
-
 	</main><!-- #main -->
-
 </div><!-- #primary -->
 
 <?php get_footer();
