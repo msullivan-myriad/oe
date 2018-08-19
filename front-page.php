@@ -18,38 +18,47 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<?php // Show the selected frontpage content.
-		if ( have_posts() ) :
-			while ( have_posts() ) : the_post();
-				get_template_part( 'template-parts/page/content', 'front-page' );
-			endwhile;
-		else :
-			get_template_part( 'template-parts/post/content', 'none' );
-		endif; ?>
+        <div id="home-content-section">
 
-		<?php
-		// Get each of our panels and show the post data.
-		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
+            <div class="intro">
 
-			/**
-			 * Filter number of front page sections in Twenty Seventeen.
-			 *
-			 * @since Twenty Seventeen 1.0
-			 *
-			 * @param int $num_sections Number of front page sections.
-			 */
-			$num_sections = apply_filters( 'twentyseventeen_front_page_sections', 4 );
-			global $twentyseventeencounter;
+                <div class="wrap">
+                    <div class="into-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt lectus non dui porttitor scelerisque. Curabitur viverra nunc metus, vitae rutrum neque rhoncus pellentesque. Curabitur tempor metus turpis, non hendrerit neque volutpat vitae. Integer molestie, leo cursus tempor dapibus, massa nulla pretium diam, quis pretium orci diam nec quam. Nulla laoreet turpis id tempus luctus. Nunc vitae fermentum turpis, sit amet pellentesque ipsum.</p>
+                    </div>
+                </div>
 
-			// Create a setting and control for each of the sections available in the theme.
-			for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
-				$twentyseventeencounter = $i;
-				twentyseventeen_front_page_section( null, $i );
-			}
+            </div><!-- .intro -->
 
-	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
+            <div class="order-vs-disorder">
+                <div class="wrap">
+                    <h2>What is Ordered Eating?</h2>
+                    <div class="oe-split">
+
+                        <div class="oe-split-1">
+                            <h3>Disorder</h3>
+                            <p>A state of confusion, frustration, or dissaray</p>
+                        </div><!-- .oe-split-1-->
+
+                        <?php /*
+                        <img class="scale-icon" src="<?php echo get_stylesheet_directory_uri() . '/misc-assets/front-page/divide-mathematical-sign.png'; ?>"/>
+                        */?>
+
+                        <div class="oe-split-2">
+                            <h3>Ordered</h3>
+                            <p>Controlled, structured, organized and clear</p>
+                        </div><!-- .oe-split-2-->
+
+                    </div><!--.oe-split-->
+
+                </div><!--.wrap-->
+
+            </div><!--.order-vs-disorder-->
+
+        </div><!-- #home-content-section -->
 
 	</main><!-- #main -->
+
 </div><!-- #primary -->
 
 <?php get_footer();

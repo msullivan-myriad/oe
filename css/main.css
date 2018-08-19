@@ -72,3 +72,9 @@ h2.widget-title {
 button {
     background-color: #368538;
 }
+
+/* Home Page */
+
+#home-content-section .order-vs-disorder {
+    background-color: #368538;
+}
