@@ -32,15 +32,14 @@ get_header(); ?>
 
             <div class="order-vs-disorder">
                 <div class="wrap">
-                    <h2>What is Ordered Eating?</h2>
                     <div class="oe-split">
 
                         <div class="oe-split-1">
-                            <h3>Disorder</h3>
-                            <p>A state of confusion, frustration, or dissaray</p>
+                            <h3>Disordered</h3>
+                            <p>A state of confusion, frustration, or disarray</p>
                         </div><!-- .oe-split-1-->
 
-                        <span>vs</span>
+                        <span class="versus">vs</span>
 
                         <div class="oe-split-2">
                             <h3>Ordered</h3>
@@ -95,6 +94,21 @@ get_header(); ?>
 
                 </div><!--.wrapper-->
             </div><!--..widgets-area-->
+
+            <!--
+
+             Have a grey background section, this will currently have a "not sure where to get started....
+
+             Or check out some of the most popular categories
+
+             -->
+
+            <!--
+
+            The final section of the site will then be just a white background newsletter section that
+            will take up something like 60% of the width of the page
+
+            -->
 
         </div><!-- #home-content-section -->
 	</main><!-- #main -->

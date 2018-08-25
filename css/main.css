@@ -75,49 +75,65 @@ button {
 
 /* Home Page */
 
-#home-content-section .order-vs-disorder {
-    background-color: #368538;
-}
 
-/* Home Page */
-
-
-.recent-posts h2 {
+#home-content-section .recent-posts h2 {
     text-align: center;
 }
 
-.recent-posts .posts-section {
+#home-content-section .recent-posts .posts-section {
     display: flex;
     justify-content: center;
 }
 
-.recent-posts .posts-section .home-page-post {
+#home-content-section .recent-posts .posts-section .home-page-post {
     display: inline-block;
     width: 50%;
     padding: 2%;
 }
 
-.recent-posts .posts-section .home-page-post .thumbnail-image {
+#home-content-section .recent-posts .posts-section .home-page-post .thumbnail-image {
     background-size: cover;
     height: 300px;
     background-position-x: 50%;
     background-position-y: 50%;
 }
 
-.recent-posts .posts-section .home-page-post a:hover h2 {
+#home-content-section .recent-posts .posts-section .home-page-post a:hover h2 {
     color: #368538;
 }
 
-.recent-posts .posts-section .home-page-post h2 {
+#home-content-section .recent-posts .posts-section .home-page-post h2 {
     text-align: left;
     padding-top: 18px;
     padding-left: 1%;
 }
 
-.recent-posts .posts-section .home-page-post p {
+#home-content-section .recent-posts .posts-section .home-page-post p {
     padding-left: 1%;
 }
 
-.recent-posts .posts-section .home-page-post .link-more:hover a {
+#home-content-section .recent-posts .posts-section .home-page-post .link-more:hover a {
     color: #368538;
+}
+
+#home-content-section .order-vs-disorder {
+    background-color: #368538;
+}
+
+#home-content-section .order-vs-disorder .oe-split {
+    display: flex;
+    justify-content: center;
+}
+
+#home-content-section .order-vs-disorder .oe-split-1, #home-content-section .order-vs-disorder .oe-split-2 {
+    display: inline-block;
+    padding: 7%;
+}
+
+#home-content-section .order-vs-disorder .oe-split h3 {
+    color: #fff;
+}
+
+#home-content-section .order-vs-disorder .oe-split p {
+    color: #fff;
 }
