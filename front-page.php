@@ -53,36 +53,37 @@ get_header(); ?>
 
             <div class="recent-posts">
                 <div class="wrap">
+                    <h2>Recent Posts</h2>
 
-                  <?php
-                  // the query
-                  $the_query = new WP_Query( array(
-                    //'category_name' => 'news',
-                    'posts_per_page' => 3,
-                  ));
-                  ?>
+                    <div class="posts-section">
 
-                  <?php if ( $the_query->have_posts() ) : ?>
-                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                      <?php
+                      // the query
+                      $the_query = new WP_Query( array(
+                        'posts_per_page' => 2,
+                      ));
+                      ?>
 
+                      <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-                    <div class="home-page-post">
-                        <a href="<?php the_permalink();?>">
-                          <?php the_post_thumbnail(); ?>
-                          <h2><?php the_title(); ?></h2>
-                          <p><?php the_excerpt(); ?></p>
-                        </a>
-                    </div>
+                        <div class="home-page-post">
+                            <a href="<?php the_permalink();?>">
+                                <div class="thumbnail-image" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
+                              <h2><?php the_title(); ?></h2>
+                            </a>
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
 
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
 
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
+                      <?php else : ?>
+                          <p><?php __('No News'); ?></p>
+                      <?php endif; ?>
 
-                  <?php else : ?>
-                      <p><?php __('No News'); ?></p>
-                  <?php endif; ?>
-
-                </div>
+                    </div><!--.posts-section-->
+                </div><!--.wrap-->
             </div><!--.recent-posts-->
 
             <div class="widgets-area">
