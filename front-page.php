@@ -52,7 +52,7 @@ get_header(); ?>
 
             <div class="recent-posts">
                 <div class="wrap">
-                    <h2>Recent Posts</h2>
+                    <h1>Recent Posts</h1>
 
                     <div class="posts-section">
 
@@ -77,7 +77,6 @@ get_header(); ?>
                         <?php wp_reset_postdata(); ?>
 
                       <?php else : ?>
-                          <p><?php __('No News'); ?></p>
                       <?php endif; ?>
 
                     </div><!--.posts-section-->
@@ -87,37 +86,37 @@ get_header(); ?>
             <div class="get-started">
                 <div class="wrap">
                     <div class="oe-split">
-                       <div class="oe-split-1 split">
+                       <div class="oe-split-3 split entry-content">
                            <h2>Welcome new readers!</h2>
                            <p>Take a look around, I hope you can find something that resonates with you.  If you are not sure where to get started I recommend checking out <a href="/category/diet/">these posts</a> and finding something that interests you.</p>
                            <p>If you're really feeling ambitious start with the <a href="/disordered-eating-epidemic/">first post</a> and work your way to the most recent.</p>
                            <p></p>
                        </div><!--.oe-split-1-->
-                       <div class="oe-split-2 split">
+                       <div class="oe-split-4 split">
                            <p>Check out some of the main topics:</p>
 
                             <label>
-                                <a href="#">Weight Loss</a>
+                                <a href="/tag/weight-loss/">Weight Loss</a>
                             </label>
 
                            <label>
-                               <a href="#">Food Addiction</a>
+                               <a href="/tag/food-addiction/">Food Addiction</a>
                            </label>
 
                            <label>
-                               <a href="#">Fasting</a>
+                               <a href="/tag/fasting/">Fasting</a>
                            </label>
 
                            <label>
-                               <a href="#">Self Reflection</a>
+                               <a href="/tag/self-reflection/">Self Reflection</a>
                            </label>
 
                            <label>
-                               <a href="#">Sugar</a>
+                               <a href="/tag/sugar/">Sugar</a>
                            </label>
 
                            <label>
-                               <a href="#">Fad Dieting</a>
+                               <a href="/tag/fad-diets/">Fad Dieting</a>
                            </label>
 
                        </div><!--.oe-split-2-->
@@ -129,7 +128,8 @@ get_header(); ?>
             <div class="widgets-area">
                 <div class="wrap">
                     <div class="widget-container">
-
+                        <h1>Keep in Touch</h1>
+                        <p>Fresh content is coming out all the time, subscribe to the newsletter and make sure you hear about it.</p>
                       <?php if ( is_active_sidebar( 'home_widgets' ) ) : ?>
                         <?php dynamic_sidebar( 'home_widgets' ); ?>
                       <?php endif; ?>

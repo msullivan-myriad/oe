@@ -75,8 +75,22 @@ button {
 
 /* Home Page */
 
+#home-content-section .intro .into-text {
+    display: block;
+    margin: 80px auto;
+    width: 82%;
+}
 
-#home-content-section .recent-posts h2 {
+#home-content-section .intro .into-text p {
+    text-align: center;
+}
+
+#home-content-section .recent-posts {
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+#home-content-section .recent-posts h1 {
     text-align: center;
 }
 
@@ -87,8 +101,8 @@ button {
 
 #home-content-section .recent-posts .posts-section .home-page-post {
     display: inline-block;
-    width: 50%;
-    padding: 2%;
+    width: 33%;
+    padding: 1% 2%;
 }
 
 #home-content-section .recent-posts .posts-section .home-page-post .thumbnail-image {
@@ -126,12 +140,27 @@ button {
 }
 
 #home-content-section .oe-split .split {
-    width: 50%;
     display: inline-block;
 }
 
+#home-content-section .oe-split-1 {
+    width: 50%;
+}
+
+#home-content-section .oe-split-2 {
+    width: 50%;
+}
+
+#home-content-section .oe-split-3 {
+   width: 60%;
+}
+
+#home-content-section .oe-split-4 {
+   width: 40%;
+}
+
 #home-content-section .order-vs-disorder .split {
-   padding: 10%;
+   padding: 3% 11%;
     text-align: center;
 }
 
@@ -141,8 +170,10 @@ button {
 
 #home-content-section .order-vs-disorder .versus {
     position: absolute;
-    top: 44%;
-    left: 50%;
+    top: 40%;
+    left: 48.5%;
+    color: #fff;
+    font-size: 26px;
 }
 
 #home-content-section .order-vs-disorder h2 {
@@ -162,9 +193,42 @@ button {
 }
 
 #home-content-section .widgets-area .widget-container {
-   width: 70%;
+   width: 60%;
     display: block;
     margin: auto;
+}
+
+#home-content-section .get-started .oe-split-4 {
+    text-align: center;
+}
+
+#home-content-section .get-started .oe-split-4 label:hover a {
+    color: #368538;
+}
+
+#home-content-section .widgets-area .widget-container {
+    padding: 60px 0;
+}
+
+#home-content-section .widgets-area h1 {
+   text-align: center;
+}
+
+#home-content-section .widgets-area p {
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: 40px auto;
+}
+
+#home-content-section .widgets-area .tnp-field input.tnp-submit {
+    display: block;
+    margin: 40px auto 0px auto;
+    max-width: 200px;
+}
+
+#home-content-section .widgets-area .tnp-field input.tnp-submit:hover {
+    background-color: #368538;
 }
 
 /* Footer */
@@ -187,5 +251,5 @@ footer .social-navigation #menu-social-links-menu {
 
 footer .social-navigation #menu-social-links-menu .menu-item {
     display: inline-block;
-    margin-left: 2%;
+    margin-left: 1.5%;
 }
