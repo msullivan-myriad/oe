@@ -9,6 +9,10 @@
  */
 
 ?>
+
+<!-- Removing site footer for now -->
+
+<?php /*
 <div class="site-info">
 	<?php
 	if ( function_exists( 'the_privacy_policy_link' ) ) {
@@ -17,3 +21,4 @@
 	?>
 
 </div><!-- .site-info -->
+ */?>

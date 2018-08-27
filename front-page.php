@@ -34,15 +34,15 @@ get_header(); ?>
                 <div class="wrap">
                     <div class="oe-split">
 
-                        <div class="oe-split-1">
-                            <h3>Disordered</h3>
+                        <div class="oe-split-1 split">
+                            <h2>Disordered</h2>
                             <p>A state of confusion, frustration, or disarray</p>
                         </div><!-- .oe-split-1-->
 
                         <span class="versus">vs</span>
 
-                        <div class="oe-split-2">
-                            <h3>Ordered</h3>
+                        <div class="oe-split-2 split">
+                            <h2>Ordered</h2>
                             <p>Controlled, structured, organized, peaceful, and clear</p>
                         </div><!-- .oe-split-2-->
 
@@ -59,7 +59,7 @@ get_header(); ?>
                       <?php
                       // the query
                       $the_query = new WP_Query( array(
-                        'posts_per_page' => 2,
+                        'posts_per_page' => 3,
                       ));
                       ?>
 
@@ -69,9 +69,8 @@ get_header(); ?>
                         <div class="home-page-post">
                             <a href="<?php the_permalink();?>">
                                 <div class="thumbnail-image" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
-                              <h2><?php the_title(); ?></h2>
+                              <h3><?php the_title(); ?></h3>
                             </a>
-                            <p><?php the_excerpt(); ?></p>
                         </div>
 
                         <?php endwhile; ?>
@@ -85,30 +84,60 @@ get_header(); ?>
                 </div><!--.wrap-->
             </div><!--.recent-posts-->
 
+            <div class="get-started">
+                <div class="wrap">
+                    <div class="oe-split">
+                       <div class="oe-split-1 split">
+                           <h2>Welcome new readers!</h2>
+                           <p>Take a look around, I hope you can find something that resonates with you.  If you are not sure where to get started I recommend checking out <a href="/category/diet/">these posts</a> and finding something that interests you.</p>
+                           <p>If you're really feeling ambitious start with the <a href="/disordered-eating-epidemic/">first post</a> and work your way to the most recent.</p>
+                           <p></p>
+                       </div><!--.oe-split-1-->
+                       <div class="oe-split-2 split">
+                           <p>Check out some of the main topics:</p>
+
+                            <label>
+                                <a href="#">Weight Loss</a>
+                            </label>
+
+                           <label>
+                               <a href="#">Food Addiction</a>
+                           </label>
+
+                           <label>
+                               <a href="#">Fasting</a>
+                           </label>
+
+                           <label>
+                               <a href="#">Self Reflection</a>
+                           </label>
+
+                           <label>
+                               <a href="#">Sugar</a>
+                           </label>
+
+                           <label>
+                               <a href="#">Fad Dieting</a>
+                           </label>
+
+                       </div><!--.oe-split-2-->
+                    </div><!--.oe-splits-->
+
+                </div>
+            </div>
+
             <div class="widgets-area">
                 <div class="wrap">
+                    <div class="widget-container">
 
-                  <?php if ( is_active_sidebar( 'home_widgets' ) ) : ?>
+                      <?php if ( is_active_sidebar( 'home_widgets' ) ) : ?>
                         <?php dynamic_sidebar( 'home_widgets' ); ?>
-                  <?php endif; ?>
+                      <?php endif; ?>
+
+                    </div><!--.widget-container-->
 
                 </div><!--.wrapper-->
             </div><!--..widgets-area-->
-
-            <!--
-
-             Have a grey background section, this will currently have a "not sure where to get started....
-
-             Or check out some of the most popular categories
-
-             -->
-
-            <!--
-
-            The final section of the site will then be just a white background newsletter section that
-            will take up something like 60% of the width of the page
-
-            -->
 
         </div><!-- #home-content-section -->
 	</main><!-- #main -->

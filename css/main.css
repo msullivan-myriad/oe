@@ -93,18 +93,18 @@ button {
 
 #home-content-section .recent-posts .posts-section .home-page-post .thumbnail-image {
     background-size: cover;
-    height: 300px;
+    height: 170px;
     background-position-x: 50%;
     background-position-y: 50%;
 }
 
-#home-content-section .recent-posts .posts-section .home-page-post a:hover h2 {
+#home-content-section .recent-posts .posts-section .home-page-post a:hover h3 {
     color: #368538;
 }
 
-#home-content-section .recent-posts .posts-section .home-page-post h2 {
+#home-content-section .recent-posts .posts-section .home-page-post h3 {
     text-align: left;
-    padding-top: 18px;
+    padding-top: 10px;
     padding-left: 1%;
 }
 
@@ -120,20 +120,72 @@ button {
     background-color: #368538;
 }
 
-#home-content-section .order-vs-disorder .oe-split {
+#home-content-section .oe-split {
     display: flex;
     justify-content: center;
 }
 
-#home-content-section .order-vs-disorder .oe-split-1, #home-content-section .order-vs-disorder .oe-split-2 {
+#home-content-section .oe-split .split {
+    width: 50%;
     display: inline-block;
-    padding: 7%;
 }
 
-#home-content-section .order-vs-disorder .oe-split h3 {
+#home-content-section .order-vs-disorder .split {
+   padding: 10%;
+    text-align: center;
+}
+
+#home-content-section .order-vs-disorder {
+    position: relative;
+}
+
+#home-content-section .order-vs-disorder .versus {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+}
+
+#home-content-section .order-vs-disorder h2 {
     color: #fff;
 }
 
-#home-content-section .order-vs-disorder .oe-split p {
+#home-content-section .order-vs-disorder p {
     color: #fff;
+}
+
+#home-content-section .get-started {
+    background-color: rgba(211, 211, 211, 0.35);
+}
+
+#home-content-section .get-started .split {
+    padding: 3%;
+}
+
+#home-content-section .widgets-area .widget-container {
+   width: 70%;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+
+footer.site-footer .wrap {
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+
+footer .social-navigation {
+    width: 100%;
+}
+
+footer .social-navigation #menu-social-links-menu {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+footer .social-navigation #menu-social-links-menu .menu-item {
+    display: inline-block;
+    margin-left: 2%;
 }
