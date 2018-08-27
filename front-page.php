@@ -24,7 +24,8 @@ get_header(); ?>
 
                 <div class="wrap">
                     <div class="into-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt lectus non dui porttitor scelerisque. Curabitur viverra nunc metus, vitae rutrum neque rhoncus pellentesque. Curabitur tempor metus turpis, non hendrerit neque volutpat vitae. Integer molestie, leo cursus tempor dapibus, massa nulla pretium diam, quis pretium orci diam nec quam. Nulla laoreet turpis id tempus luctus. Nunc vitae fermentum turpis, sit amet pellentesque ipsum.</p>
+                        <p>Welcome to Ordered Eating, a website dedicated to helping people improve their health.  The resources here have an singular theme, moving towards control in our dietary habits. </p>
+                        <a href="/disordered-eating-epidemic/" class="oe-button">Learn More</a>
                     </div>
                 </div>
 
@@ -39,7 +40,7 @@ get_header(); ?>
                             <p>A state of confusion, frustration, or disarray</p>
                         </div><!-- .oe-split-1-->
 
-                        <span class="versus">vs</span>
+                        <span class="versus">vs.</span>
 
                         <div class="oe-split-2 split">
                             <h2>Ordered</h2>
@@ -88,8 +89,8 @@ get_header(); ?>
                     <div class="oe-split">
                        <div class="oe-split-3 split entry-content">
                            <h2>Welcome new readers!</h2>
-                           <p>Take a look around, I hope you can find something that resonates with you.  If you are not sure where to get started I recommend checking out <a href="/category/diet/">these posts</a> and finding something that interests you.</p>
-                           <p>If you're really feeling ambitious start with the <a href="/disordered-eating-epidemic/">first post</a> and work your way to the most recent.</p>
+                           <p>Take a look around, I hope you can find something that resonates with you.  If you're not sure where to get started I recommend checking out <a href="/category/diet/">these posts</a> and finding something that interests you.</p>
+                           <p>For the more ambitious start with the <a href="/disordered-eating-epidemic/">first post</a> and work your way up to the most recent.</p>
                            <p></p>
                        </div><!--.oe-split-1-->
                        <div class="oe-split-4 split">
