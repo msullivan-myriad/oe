@@ -105,7 +105,7 @@ get_header(); ?>
                            </label>
 
                            <label>
-                               <a href="/tag/fasting/">Fasting</a>
+                               <a href="/tag/intermittent-fasting/">Intermittent Fasting</a>
                            </label>
 
                            <label>
